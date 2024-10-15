@@ -1,4 +1,6 @@
-﻿namespace Topic_5._2___Assignment
+﻿using System.Reflection.Metadata;
+
+namespace Topic_5._2___Assignment
 {
     internal class Program
     {
@@ -7,6 +9,8 @@
             
         {
             int grade, age, bet;
+            string multChoice;
+            
             Console.WriteLine("What is your grade");
             int.TryParse(Console.ReadLine(), out grade);
             if (grade >= 50)
@@ -67,11 +71,38 @@
             if (grade > 100)
             {
                 Thread.Sleep(2000);
-                Console.WriteLine("Wait you must be Mr.Cornies. die.");
+                Console.WriteLine("Wait you must be Mr.Cornies.");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Good luck guessing the right answer, these questions are pretty hard.");
+            Thread.Sleep(1000);
+            Console.WriteLine("How many Circles O O O");
+            multChoice = Console.ReadLine();
+            Console.WriteLine("A: 5");
+            Console.WriteLine("B: 3");
+            Console.WriteLine("C: 1");
+            Console.WriteLine("D: 0");
+            if (multChoice.ToUpper() == "B" )
+            {
+                Console.WriteLine("OMG CONGRATS MAN YOU GOT IT RIGHT, IM SHOCKED!!!");
+            }
+            else if (multChoice.ToUpper() == "C" )
+            {
+                Console.WriteLine("Bro your dumb...");
+            }
+            else if (multChoice.ToUpper() == "D" )
+            {
+                Console.WriteLine("Man you are not very smart man...");
             }
 
-
                 
+            
+
+
+
+
         }
     }
 }
