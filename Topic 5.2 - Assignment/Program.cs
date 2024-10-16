@@ -10,6 +10,7 @@ namespace Topic_5._2___Assignment
         {
             int grade, age, bet;
             string multChoice;
+            double temp;
             
             Console.WriteLine("What is your grade");
             int.TryParse(Console.ReadLine(), out grade);
@@ -79,26 +80,37 @@ namespace Topic_5._2___Assignment
             Console.WriteLine("Good luck guessing the right answer, these questions are pretty hard.");
             Thread.Sleep(1000);
             Console.WriteLine("How many Circles O O O");
-            multChoice = Console.ReadLine();
             Console.WriteLine("A: 5");
             Console.WriteLine("B: 3");
             Console.WriteLine("C: 1");
             Console.WriteLine("D: 0");
-            if (multChoice.ToUpper() == "B" )
+            Console.Write("Enter the letter here: ");
+            multChoice = Console.ReadLine();
+            if (multChoice.ToUpper() == "A") 
+            {
+                Console.WriteLine("Beh");
+            }
+            else if (multChoice.ToUpper() == "B")
             {
                 Console.WriteLine("OMG CONGRATS MAN YOU GOT IT RIGHT, IM SHOCKED!!!");
             }
-            else if (multChoice.ToUpper() == "C" )
+            else if (multChoice.ToUpper() == "C")
             {
                 Console.WriteLine("Bro your dumb...");
             }
-            else if (multChoice.ToUpper() == "D" )
+            else if (multChoice.ToUpper() == "D")
             {
-                Console.WriteLine("Man you are not very smart man...");
+                Console.WriteLine("Man you are not very smart, maaaaaaaaaaan...");
             }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Tell me a random temp and i will tell you if it is ");
+            double.TryParse (Console)
+            if (temp <= 0) ;
 
-                
-            
+
+
 
 
 
