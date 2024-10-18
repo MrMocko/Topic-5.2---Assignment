@@ -9,7 +9,7 @@ namespace Topic_5._2___Assignment
             
         {
             int grade, age, bet;
-            string multChoice;
+            string multChoice, name;
             double temp;
             
             Console.WriteLine("What is your grade");
@@ -105,9 +105,48 @@ namespace Topic_5._2___Assignment
             Console.WriteLine("Press Enter to continue");
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("Tell me a random temp and i will tell you if it is ");
-            double.TryParse (Console)
-            if (temp <= 0) ;
+            Console.WriteLine("Tell me a random temp and i will tell you if it is a solid, liquid or gas. ");
+            double.TryParse (Console.ReadLine(), out temp);
+            if (temp <= 0)
+            {
+                Console.WriteLine("Yup thats a solid, nice try bozo");
+            }
+            else if (temp >= 100)
+            {
+                Console.WriteLine("Yea man thats gas");
+            }
+            else if (temp > 0)
+            {
+                Console.WriteLine("Yuperoos thats probably a liquid");
+            }
+            Console.WriteLine("Press Enter to continue");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("Hola bozo como- never mind man thats too much work, how old are you unc?");
+            Console.WriteLine("Btw if you put an age less then zero your beta!!!");
+            Console.WriteLine("WHATS YOUR NAME BTW");
+            name = Console.ReadLine();
+            Console.WriteLine("And again how old are you unc?");
+            int.TryParse(Console.ReadLine(), out age);
+            if (age <= 16)
+            {
+                Console.WriteLine("Hey man you have aura " + name + ", sorry that just slipped out you can't drive *PLUS AURA*");
+            }
+            else if (age >=25)
+            {
+                Console.WriteLine("*Bows to the alpha* Nice job " + name + " you fully alpha");
+            }
+            else if (age >= 18)
+            {
+                Console.WriteLine("Clearly you like your cheese drippy " + name + ", yea and also you can vote but can't rent a car");
+            }
+            else if (age >=16)
+            {
+                Console.WriteLine("You are an alpha Mr." + name + ", oopsie again yea you can drive but not vote");
+            }
+            
+            
+
 
 
 
