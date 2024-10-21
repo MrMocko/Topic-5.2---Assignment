@@ -144,6 +144,7 @@ namespace Topic_5._2___Assignment
             {
                 Console.WriteLine("You are an alpha Mr." + name + ", oopsie again yea you can drive but not vote");
             }
+            Console.ReadLine ();
             
             
 
